@@ -23,107 +23,59 @@ h6 {
   margin: 0;
 }
 
-.border-x {
-  border-left: var(--border);
-  border-right: var(--border);
+h1,
+.h1 {
+  font-size: 2.25rem;
 }
 
-.navbar {
-  background-color: white;
-  border: var(--border);
-  display: flex;
-  height: 64px;
-  gap: 1.75rem;
-  padding: 0 2.25rem;
+h2,
+.h2 {
+  font-size: 1.9rem;
 }
 
-.navbar > .logo {
-  align-items: center;
-  display: flex;
-  font-family: Stencil;
-  justify-content: center;
-  width: 15%;
+h3,
+.h3 {
+  font-size: 1.5rem;
 }
 
-.navbar-nav {
-  display: flex;
-  align-items: center;
+h4,
+.h4 {
+  font-size: 1.35rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.2rem;
+}
+
+.row > * {
   padding: 0;
-  margin-right: 0.25rem;
-  gap: 10px;
 }
 
-.navbar-nav > li {
-  list-style: none;
+#navbar {
+  height: 64px;
 }
 
-.navbar > .searchbar {
-  flex-grow: 1;
+#navbar .logo {
+  font-family: Stencil;
+  min-width: 215px;
+  width: 15%;
+  white-space: nowrap;
 }
 
-.navbar > .account {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
+#navbar .account {
   width: 18%;
 }
 
-.navbar > .account > .login-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.searchbar {
-  align-items: center;
-  display: flex;
-  padding: 0 2rem;
-}
-
-.searchbar > label {
-  align-items: center;
-  display: flex;
-}
-
-.searchbar > input {
-  border: none;
-  margin-left: 0.75rem;
-  flex-grow: 1;
-  font-size: larger;
-}
-
-.searchbar > input:focus {
+#navbar-searchbar-input:focus {
   outline: none;
 }
 
 .content {
-  padding: 4rem 0;
+  padding-top: 7.5% !important;
 }
 
-.anime-section {
-  display: grid;
-  grid-auto-rows: 200px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: min-content;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-.anime-section > * {
-  border: var(--border);
-}
-
-.anime-section > h2 {
-  background-color: white;
-  height: fit-content;
-  grid-column: 1 / span 6;
-  padding: 0.75rem;
-  text-align: center;
-}
-
-.anime-section > a > img {
-  height: 100%;
+.anime-section img {
+  min-height: 200px;
   object-fit: cover;
-  width: 100%;
 }
